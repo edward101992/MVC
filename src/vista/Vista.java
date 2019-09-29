@@ -36,7 +36,7 @@ public class Vista extends javax.swing.JFrame {
         txtDolar = new javax.swing.JTextField();
         txtEuro = new javax.swing.JTextField();
         txtYen = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
+        lbTitulo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -56,15 +56,13 @@ public class Vista extends javax.swing.JFrame {
 
         lbPesos.setText("Pesos Colombianos :");
 
-        jLabel5.setText("Convertidor de Moneda");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(153, 153, 153)
-                .addComponent(jLabel5)
+                .addComponent(lbTitulo)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(26, Short.MAX_VALUE)
@@ -100,7 +98,7 @@ public class Vista extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(23, 23, 23)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lbTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtPesos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -163,10 +161,10 @@ public class Vista extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btnConvertir;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel lbDolar;
     private javax.swing.JLabel lbEuro;
     private javax.swing.JLabel lbPesos;
+    public javax.swing.JLabel lbTitulo;
     private javax.swing.JLabel lbYen;
     public javax.swing.JTextField txtDolar;
     public javax.swing.JTextField txtEuro;

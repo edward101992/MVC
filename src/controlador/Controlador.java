@@ -25,9 +25,14 @@ public class Controlador implements ActionListener{
         this.vista.btnConvertir.addActionListener(this);
     }
     
+    /**
+     * Metodo por el cual inicia el programa se le da un titulo al formulario y se pocisiona en 
+     * el centro de la pantalla
+     */
+    
     public void inicio(){
     
-        vista.setTitle("Hola");
+        vista.setTitle(titulo());
         vista.setLocationRelativeTo(null);
         
     }   
@@ -39,7 +44,15 @@ public class Controlador implements ActionListener{
         modelo.convertirYen();
         vista.txtDolar.setText(String.valueOf(modelo.getDolar()));
         vista.txtYen.setText(String.valueOf(modelo.getYen()));
+        
     
+    }
+    
+    public String titulo(){
+    
+        String cadena = "Conversor de Moneda Local";
+        vista.lbTitulo.setText(cadena);
+        return cadena;
     }
 
     @Override
