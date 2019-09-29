@@ -46,8 +46,5 @@ public class Controlador implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         asignarValor();
     }
-    
-    
-    
-    
+      
 }
